@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "965028443550",
+    "firebase_url": "https://clouding-81967.firebaseio.com",
+    "project_id": "clouding-81967",
+    "storage_bucket": "clouding-81967.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965028443550:android:57514a6a12522b92",
+        "android_client_info": {
+          "package_name": "com.example.clouding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965028443550-mtas567pf8sr3nol63act5oshshtek6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3As2tRNf0HSGIcyICbNT7R16PXWltRck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965028443550-mtas567pf8sr3nol63act5oshshtek6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_text_fields_black_24dp"
+            android:title="Text send" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_text_format_black_24dp"
+            android:title="Text retrive" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Image send retrive" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_library_music_black_24dp"
+            android:title="Audio send retrive" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Video send retrive" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="PDF send retrive" />
+
+        <item
+            android:id="@+id/recycler"
+            android:icon="@drawable/ic_directions_bike_black_24dp"
+            android:title="Recycler View"/>
+
+        <item
+            android:id="@+id/bar"
+            android:icon="@drawable/ic_format_italic_black_24dp"
+            android:title="Rest Intent" />
+
+    </group>
+
+</menu>
