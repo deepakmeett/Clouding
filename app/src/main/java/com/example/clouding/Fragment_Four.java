@@ -19,7 +19,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.UploadTask;
-import com.squareup.picasso.Picasso;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -39,7 +38,7 @@ public class Fragment_Four extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment__four, container, false);
+        return inflater.inflate( R.layout.audio_frag, container, false);
     }
 
     @Override

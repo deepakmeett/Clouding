@@ -11,12 +11,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.storage.FirebaseStorage;
@@ -32,7 +30,7 @@ public class Fragment_Three extends Fragment {
     ImageView imageView1, imageView2;
     TextView textView1, textView2;
 
-    public Fragment_Three() {
+    public Fragment_Three() {   
         // Required empty public constructor
     }
 
@@ -40,7 +38,7 @@ public class Fragment_Three extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment__three, container, false);
+        return inflater.inflate( R.layout.image_frag, container, false);
     }
 
     @Override

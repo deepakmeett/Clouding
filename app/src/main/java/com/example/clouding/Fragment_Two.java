@@ -1,7 +1,6 @@
 package com.example.clouding;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -40,7 +39,7 @@ public class Fragment_Two extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment__two, container, false);
+        return inflater.inflate( R.layout.text_retrieve_frag, container, false);
     }
 
     @Override
