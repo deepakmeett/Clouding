@@ -20,6 +20,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -58,6 +59,32 @@ public class Fragment_Six extends Fragment {
                 startActivityForResult(Intent.createChooser(intent, "Select PDF file"), 4);
             }
         });
+
+        image01.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseStorage.getInstance().getReference()
+                        .child("PDF_FILES").child("pdf")
+                        .getDownloadUrl().addOnCompleteListener(new OnCompleteListener<Uri>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Uri> task) {
+                        Uri uri = task.getResult();
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setDataAndType(uri, "application/pdf");
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                        Intent intent1 = Intent.createChooser(intent, "Open File");
+                        try {
+                            startActivity(intent1);
+                        } catch (ActivityNotFoundException e) {
+
+                        }
+
+
+                    }
+                });
+            }
+        } );
     }
 
     @Override
